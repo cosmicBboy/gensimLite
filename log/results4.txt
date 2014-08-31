@@ -1,0 +1,356 @@
+2014-08-30 13:44:23,063 : INFO : 'pattern' package found; utils.lemmatize() is available for English
+processing document 1...
+processing document 2...
+processing document 3...
+processing document 4...
+processing document 5...
+processing document 6...
+processing document 7...
+processing document 8...
+processing document 9...
+processing document 10...
+processing document 11...
+processing document 12...
+json converted to list object
+creating dictionary...
+2014-08-30 13:45:15,658 : INFO : adding document #0 to Dictionary(0 unique tokens: [])
+2014-08-30 13:45:16,376 : INFO : built Dictionary(20683 unique tokens: ['writings', 'conapo', 'reallocations', 'mackill', 'cussed']...) from 12 documents (total 357228 corpus positions)
+saving dictionary to data/sdsn2.dict
+2014-08-30 13:45:16,397 : INFO : saving Dictionary object under data/sdsn2.dict, separately None
+json converted to list object
+2014-08-30 13:45:16,474 : INFO : loading Dictionary object from data/sdsn2.dict
+creating corpus...
+saving corpus to data/sdsn2.dict
+2014-08-30 13:45:17,173 : INFO : storing corpus in Matrix Market format to data/sdsn2.mm
+2014-08-30 13:45:17,174 : INFO : saving sparse matrix to data/sdsn2.mm
+2014-08-30 13:45:17,174 : INFO : PROGRESS: saving document #0
+2014-08-30 13:45:17,313 : INFO : saved 12x8890 matrix, density=41.100% (43846/106680)
+2014-08-30 13:45:17,313 : INFO : saving MmCorpus index to data/sdsn2.mm.index
+2014-08-30 13:45:17,328 : INFO : loading Dictionary object from data/sdsn2.dict
+2014-08-30 13:45:17,349 : INFO : loaded corpus index from data/sdsn2.mm.index
+2014-08-30 13:45:17,349 : INFO : initializing corpus reader from data/sdsn2.mm
+2014-08-30 13:45:17,349 : INFO : accepted corpus with 12 documents, 8890 features, 43846 non-zero entries
+2014-08-30 13:45:17,350 : INFO : using symmetric alpha at 0.0833333333333
+2014-08-30 13:45:17,350 : INFO : using serial LDA version on this node
+2014-08-30 13:45:17,414 : INFO : running online LDA training, 12 topics, 20 passes over the supplied corpus of 12 documents, updating model once every 12 documents, evaluating perplexity every 12 documents, iterating 50 with a convergence threshold of 0
+2014-08-30 13:45:20,037 : INFO : -10.016 per-word bound, 1035.7 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:45:20,037 : INFO : PROGRESS: pass 0, at document #12/12
+2014-08-30 13:45:20,286 : INFO : 0/12 documents converged within 50 iterations
+2014-08-30 13:45:20,310 : INFO : topic #0 (0.083): 0.007*countries + 0.007*climate + 0.006*health + 0.005*change + 0.005*food + 0.004*energy + 0.004*sector + 0.004*also + 0.004*poverty + 0.003*systems
+2014-08-30 13:45:20,311 : INFO : topic #1 (0.083): 0.008*countries + 0.007*climate + 0.006*health + 0.006*energy + 0.004*change + 0.004*urban + 0.004*food + 0.004*economic + 0.004*access + 0.004*world
+2014-08-30 13:45:20,313 : INFO : topic #2 (0.083): 0.008*health + 0.008*countries + 0.005*climate + 0.005*energy + 0.004*change + 0.004*also + 0.004*use + 0.004*sector + 0.004*new + 0.003*emissions
+2014-08-30 13:45:20,314 : INFO : topic #3 (0.083): 0.007*health + 0.006*countries + 0.006*climate + 0.005*urban + 0.005*energy + 0.005*change + 0.004*economic + 0.004*poverty + 0.004*income + 0.004*world
+2014-08-30 13:45:20,316 : INFO : topic #4 (0.083): 0.010*countries + 0.007*climate + 0.005*health + 0.005*food + 0.004*poverty + 0.004*energy + 0.004*international + 0.004*world + 0.003*economic + 0.003*new
+2014-08-30 13:45:20,317 : INFO : topic #5 (0.083): 0.008*countries + 0.007*health + 0.007*climate + 0.007*change + 0.006*energy + 0.005*international + 0.004*poverty + 0.004*new + 0.004*sector + 0.004*emissions
+2014-08-30 13:45:20,319 : INFO : topic #6 (0.083): 0.008*countries + 0.007*health + 0.005*education + 0.004*poverty + 0.004*climate + 0.004*national + 0.004*change + 0.004*energy + 0.004*economic + 0.004*social
+2014-08-30 13:45:20,320 : INFO : topic #7 (0.083): 0.013*health + 0.008*countries + 0.005*climate + 0.005*poverty + 0.005*change + 0.005*energy + 0.004*income + 0.004*also + 0.004*world + 0.004*economic
+2014-08-30 13:45:20,322 : INFO : topic #8 (0.083): 0.008*countries + 0.006*climate + 0.006*energy + 0.005*change + 0.005*poverty + 0.005*health + 0.004*food + 0.004*also + 0.004*education + 0.004*national
+2014-08-30 13:45:20,323 : INFO : topic #9 (0.083): 0.009*countries + 0.007*health + 0.006*climate + 0.005*poverty + 0.005*change + 0.005*energy + 0.004*international + 0.004*economic + 0.004*also + 0.004*world
+2014-08-30 13:45:20,325 : INFO : topic #10 (0.083): 0.008*countries + 0.006*international + 0.006*climate + 0.006*health + 0.005*change + 0.004*economic + 0.004*sector + 0.004*rights + 0.004*world + 0.004*poverty
+2014-08-30 13:45:20,326 : INFO : topic #11 (0.083): 0.014*health + 0.008*countries + 0.005*climate + 0.005*energy + 0.004*poverty + 0.004*change + 0.004*income + 0.004*emissions + 0.003*world + 0.003*human
+2014-08-30 13:45:20,327 : INFO : topic diff=2.320696, rho=1.000000
+2014-08-30 13:45:22,689 : INFO : -8.252 per-word bound, 304.8 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:45:22,689 : INFO : PROGRESS: pass 1, at document #12/12
+2014-08-30 13:45:22,942 : INFO : 0/12 documents converged within 50 iterations
+2014-08-30 13:45:22,964 : INFO : topic #0 (0.083): 0.013*food + 0.009*agriculture + 0.007*countries + 0.006*agricultural + 0.006*systems + 0.006*climate + 0.005*http + 0.005*also + 0.005*www + 0.005*change
+2014-08-30 13:45:22,965 : INFO : topic #1 (0.083): 0.008*energy + 0.008*countries + 0.007*climate + 0.005*urban + 0.005*change + 0.004*land + 0.004*food + 0.004*economic + 0.004*access + 0.004*resources
+2014-08-30 13:45:22,966 : INFO : topic #2 (0.083): 0.007*countries + 0.007*health + 0.005*energy + 0.005*climate + 0.004*change + 0.004*use + 0.004*also + 0.004*new + 0.003*food + 0.003*land
+2014-08-30 13:45:22,968 : INFO : topic #3 (0.083): 0.023*urban + 0.009*cities + 0.008*land + 0.005*growth + 0.005*economic + 0.005*countries + 0.005*climate + 0.005*change + 0.005*health + 0.005*expansion
+2014-08-30 13:45:22,969 : INFO : topic #4 (0.083): 0.007*countries + 0.007*food + 0.004*climate + 0.004*poverty + 0.004*agricultural + 0.004*international + 0.004*agriculture + 0.004*water + 0.004*services + 0.004*systems
+2014-08-30 13:45:22,970 : INFO : topic #5 (0.083): 0.018*climate + 0.015*energy + 0.012*change + 0.010*emissions + 0.008*countries + 0.006*carbon + 0.005*target + 0.005*decarbonization + 0.005*sector + 0.004*targets
+2014-08-30 13:45:22,972 : INFO : topic #6 (0.083): 0.009*education + 0.007*countries + 0.006*poverty + 0.006*social + 0.006*women + 0.006*health + 0.005*human + 0.005*children + 0.005*rights + 0.004*access
+2014-08-30 13:45:22,974 : INFO : topic #7 (0.083): 0.030*health + 0.011*countries + 0.010*income + 0.006*poverty + 0.004*low + 0.004*world + 0.004*middle + 0.004*services + 0.004*people + 0.004*economic
+2014-08-30 13:45:22,975 : INFO : topic #8 (0.083): 0.009*countries + 0.006*education + 0.006*private + 0.005*developing + 0.005*sector + 0.005*aid + 0.004*poverty + 0.004*learning + 0.004*country + 0.004*climate
+2014-08-30 13:45:22,977 : INFO : topic #9 (0.083): 0.009*countries + 0.006*poverty + 0.005*private + 0.005*international + 0.005*sector + 0.004*health + 0.004*climate + 0.004*aid + 0.004*economic + 0.004*country
+2014-08-30 13:45:22,978 : INFO : topic #10 (0.083): 0.010*rights + 0.008*international + 0.007*countries + 0.006*human + 0.005*social + 0.005*sector + 0.005*economic + 0.004*world + 0.004*governance + 0.004*poverty
+2014-08-30 13:45:22,980 : INFO : topic #11 (0.083): 0.024*health + 0.009*countries + 0.006*income + 0.004*climate + 0.004*services + 0.004*world + 0.003*new + 0.003*low + 0.003*www + 0.003*economic
+2014-08-30 13:45:22,981 : INFO : topic diff=1.344007, rho=0.707107
+2014-08-30 13:45:25,313 : INFO : -7.889 per-word bound, 237.1 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:45:25,313 : INFO : PROGRESS: pass 2, at document #12/12
+2014-08-30 13:45:25,555 : INFO : 5/12 documents converged within 50 iterations
+2014-08-30 13:45:25,576 : INFO : topic #0 (0.083): 0.016*food + 0.010*agriculture + 0.008*agricultural + 0.007*countries + 0.007*systems + 0.005*http + 0.005*also + 0.005*www + 0.005*land + 0.004*water
+2014-08-30 13:45:25,577 : INFO : topic #1 (0.083): 0.009*energy + 0.008*cid + 0.007*countries + 0.007*climate + 0.006*land + 0.005*goal + 0.005*change + 0.005*water + 0.004*consumption + 0.004*resources
+2014-08-30 13:45:25,579 : INFO : topic #2 (0.083): 0.007*countries + 0.007*health + 0.005*energy + 0.004*climate + 0.004*change + 0.004*use + 0.003*also + 0.003*new + 0.003*food + 0.003*land
+2014-08-30 13:45:25,580 : INFO : topic #3 (0.083): 0.031*urban + 0.012*cities + 0.009*land + 0.006*growth + 0.006*expansion + 0.006*economic + 0.006*las + 0.005*housing + 0.005*areas + 0.005*population
+2014-08-30 13:45:25,582 : INFO : topic #4 (0.083): 0.006*food + 0.006*countries + 0.006*biodiversity + 0.005*services + 0.005*ecosystem + 0.005*climate + 0.004*water + 0.004*marine + 0.004*international + 0.004*management
+2014-08-30 13:45:25,583 : INFO : topic #5 (0.083): 0.021*climate + 0.017*energy + 0.013*change + 0.012*emissions + 0.008*countries + 0.007*carbon + 0.006*target + 0.006*decarbonization + 0.005*gas + 0.005*targets
+2014-08-30 13:45:25,585 : INFO : topic #6 (0.083): 0.014*education + 0.008*poverty + 0.008*children + 0.007*women + 0.007*social + 0.007*countries + 0.006*learning + 0.005*access + 0.005*health + 0.005*human
+2014-08-30 13:45:25,586 : INFO : topic #7 (0.083): 0.034*health + 0.012*countries + 0.011*income + 0.006*poverty + 0.005*low + 0.005*middle + 0.004*world + 0.004*services + 0.004*public + 0.004*care
+2014-08-30 13:45:25,588 : INFO : topic #8 (0.083): 0.010*countries + 0.008*private + 0.007*sector + 0.006*aid + 0.005*developing + 0.005*country + 0.005*education + 0.004*risk + 0.004*international + 0.004*world
+2014-08-30 13:45:25,590 : INFO : topic #9 (0.083): 0.009*countries + 0.006*poverty + 0.005*private + 0.005*international + 0.004*sector + 0.004*health + 0.004*climate + 0.004*aid + 0.004*economic + 0.004*country
+2014-08-30 13:45:25,591 : INFO : topic #10 (0.083): 0.014*rights + 0.010*international + 0.008*human + 0.007*countries + 0.006*social + 0.006*governance + 0.005*economic + 0.005*women + 0.005*world + 0.004*poverty
+2014-08-30 13:45:25,593 : INFO : topic #11 (0.083): 0.022*health + 0.008*countries + 0.006*income + 0.003*climate + 0.003*services + 0.003*world + 0.003*new + 0.003*low + 0.003*www + 0.003*economic
+2014-08-30 13:45:25,594 : INFO : topic diff=1.189437, rho=0.577350
+2014-08-30 13:45:27,919 : INFO : -7.750 per-word bound, 215.3 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:45:27,919 : INFO : PROGRESS: pass 3, at document #12/12
+2014-08-30 13:45:28,156 : INFO : 5/12 documents converged within 50 iterations
+2014-08-30 13:45:28,178 : INFO : topic #0 (0.083): 0.016*food + 0.011*agriculture + 0.009*agricultural + 0.007*systems + 0.007*countries + 0.005*http + 0.005*www + 0.005*also + 0.005*land + 0.005*new
+2014-08-30 13:45:28,179 : INFO : topic #1 (0.083): 0.011*cid + 0.009*energy + 0.007*land + 0.006*countries + 0.006*climate + 0.006*goal + 0.006*water + 0.005*consumption + 0.005*change + 0.005*resources
+2014-08-30 13:45:28,181 : INFO : topic #2 (0.083): 0.006*countries + 0.006*health + 0.004*energy + 0.004*climate + 0.003*change + 0.003*use + 0.003*also + 0.003*new + 0.003*food + 0.003*land
+2014-08-30 13:45:28,182 : INFO : topic #3 (0.083): 0.035*urban + 0.013*cities + 0.010*land + 0.007*growth + 0.006*expansion + 0.006*las + 0.006*economic + 0.006*housing + 0.005*areas + 0.005*population
+2014-08-30 13:45:28,184 : INFO : topic #4 (0.083): 0.007*biodiversity + 0.006*ecosystem + 0.006*food + 0.005*marine + 0.005*services + 0.005*countries + 0.005*ecosystems + 0.005*climate + 0.005*ocean + 0.005*international
+2014-08-30 13:45:28,185 : INFO : topic #5 (0.083): 0.022*climate + 0.018*energy + 0.013*change + 0.012*emissions + 0.008*countries + 0.007*carbon + 0.007*target + 0.006*decarbonization + 0.005*gas + 0.005*targets
+2014-08-30 13:45:28,186 : INFO : topic #6 (0.083): 0.016*education + 0.010*poverty + 0.010*children + 0.008*learning + 0.007*social + 0.007*countries + 0.006*women + 0.006*access + 0.005*health + 0.005*school
+2014-08-30 13:45:28,188 : INFO : topic #7 (0.083): 0.036*health + 0.012*countries + 0.012*income + 0.005*low + 0.005*middle + 0.005*poverty + 0.004*services + 0.004*world + 0.004*care + 0.004*public
+2014-08-30 13:45:28,189 : INFO : topic #8 (0.083): 0.011*countries + 0.009*private + 0.008*sector + 0.008*aid + 0.006*developing + 0.006*country + 0.005*international + 0.005*risk + 0.004*financial + 0.004*world
+2014-08-30 13:45:28,191 : INFO : topic #9 (0.083): 0.008*countries + 0.005*poverty + 0.004*private + 0.004*international + 0.004*sector + 0.004*health + 0.003*climate + 0.003*aid + 0.003*economic + 0.003*country
+2014-08-30 13:45:28,192 : INFO : topic #10 (0.083): 0.016*rights + 0.010*international + 0.010*human + 0.007*social + 0.006*governance + 0.006*countries + 0.006*women + 0.005*economic + 0.005*poverty + 0.005*world
+2014-08-30 13:45:28,194 : INFO : topic #11 (0.083): 0.020*health + 0.007*countries + 0.005*income + 0.003*climate + 0.003*services + 0.003*world + 0.003*new + 0.003*low + 0.003*www + 0.003*economic
+2014-08-30 13:45:28,195 : INFO : topic diff=0.920959, rho=0.500000
+2014-08-30 13:45:30,494 : INFO : -7.684 per-word bound, 205.7 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:45:30,494 : INFO : PROGRESS: pass 4, at document #12/12
+2014-08-30 13:45:30,747 : INFO : 4/12 documents converged within 50 iterations
+2014-08-30 13:45:30,769 : INFO : topic #0 (0.083): 0.016*food + 0.011*agriculture + 0.009*agricultural + 0.007*systems + 0.007*countries + 0.005*http + 0.005*www + 0.005*also + 0.005*land + 0.005*new
+2014-08-30 13:45:30,771 : INFO : topic #1 (0.083): 0.012*cid + 0.010*energy + 0.007*land + 0.006*water + 0.006*countries + 0.006*goal + 0.006*climate + 0.006*consumption + 0.005*change + 0.005*food
+2014-08-30 13:45:30,772 : INFO : topic #2 (0.083): 0.005*countries + 0.005*health + 0.004*energy + 0.003*climate + 0.003*change + 0.003*use + 0.003*also + 0.002*new + 0.002*food + 0.002*land
+2014-08-30 13:45:30,774 : INFO : topic #3 (0.083): 0.036*urban + 0.013*cities + 0.010*land + 0.007*growth + 0.007*expansion + 0.006*las + 0.006*economic + 0.006*housing + 0.006*areas + 0.005*population
+2014-08-30 13:45:30,776 : INFO : topic #4 (0.083): 0.008*biodiversity + 0.006*ecosystem + 0.006*marine + 0.006*services + 0.005*ocean + 0.005*ecosystems + 0.005*food + 0.005*international + 0.005*management + 0.005*climate
+2014-08-30 13:45:30,777 : INFO : topic #5 (0.083): 0.022*climate + 0.018*energy + 0.014*change + 0.012*emissions + 0.008*countries + 0.008*carbon + 0.007*target + 0.006*decarbonization + 0.005*gas + 0.005*targets
+2014-08-30 13:45:30,779 : INFO : topic #6 (0.083): 0.016*education + 0.011*poverty + 0.010*children + 0.009*learning + 0.007*countries + 0.007*social + 0.006*access + 0.006*women + 0.005*school + 0.005*quality
+2014-08-30 13:45:30,781 : INFO : topic #7 (0.083): 0.037*health + 0.012*countries + 0.012*income + 0.005*low + 0.005*middle + 0.005*services + 0.004*world + 0.004*care + 0.004*mortality + 0.004*public
+2014-08-30 13:45:30,782 : INFO : topic #8 (0.083): 0.011*countries + 0.009*private + 0.009*sector + 0.008*aid + 0.006*developing + 0.006*country + 0.006*international + 0.005*risk + 0.005*financial + 0.004*world
+2014-08-30 13:45:30,784 : INFO : topic #9 (0.083): 0.007*countries + 0.004*poverty + 0.004*private + 0.003*international + 0.003*sector + 0.003*health + 0.003*climate + 0.003*aid + 0.003*economic + 0.003*country
+2014-08-30 13:45:30,785 : INFO : topic #10 (0.083): 0.018*rights + 0.011*human + 0.010*international + 0.007*social + 0.007*women + 0.007*governance + 0.006*countries + 0.006*economic + 0.005*poverty + 0.004*world
+2014-08-30 13:45:30,787 : INFO : topic #11 (0.083): 0.016*health + 0.006*countries + 0.004*income + 0.003*climate + 0.003*services + 0.002*world + 0.002*new + 0.002*low + 0.002*www + 0.002*economic
+2014-08-30 13:45:30,788 : INFO : topic diff=0.707765, rho=0.447214
+2014-08-30 13:45:33,171 : INFO : -7.649 per-word bound, 200.7 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:45:33,171 : INFO : PROGRESS: pass 5, at document #12/12
+2014-08-30 13:45:33,413 : INFO : 4/12 documents converged within 50 iterations
+2014-08-30 13:45:33,435 : INFO : topic #0 (0.083): 0.017*food + 0.011*agriculture + 0.009*agricultural + 0.007*systems + 0.007*countries + 0.005*http + 0.005*www + 0.005*also + 0.005*land + 0.005*new
+2014-08-30 13:45:33,436 : INFO : topic #1 (0.083): 0.012*cid + 0.010*energy + 0.008*land + 0.007*water + 0.006*goal + 0.006*countries + 0.006*consumption + 0.005*climate + 0.005*food + 0.005*production
+2014-08-30 13:45:33,438 : INFO : topic #2 (0.083): 0.004*countries + 0.004*health + 0.003*energy + 0.003*climate + 0.002*change + 0.002*use + 0.002*also + 0.002*new + 0.002*food + 0.002*land
+2014-08-30 13:45:33,439 : INFO : topic #3 (0.083): 0.037*urban + 0.013*cities + 0.011*land + 0.007*growth + 0.007*expansion + 0.007*las + 0.006*economic + 0.006*housing + 0.006*areas + 0.005*population
+2014-08-30 13:45:33,441 : INFO : topic #4 (0.083): 0.009*biodiversity + 0.007*ecosystem + 0.007*marine + 0.006*services + 0.006*ocean + 0.006*ecosystems + 0.005*management + 0.005*international + 0.005*climate + 0.005*environmental
+2014-08-30 13:45:33,442 : INFO : topic #5 (0.083): 0.022*climate + 0.018*energy + 0.014*change + 0.012*emissions + 0.008*carbon + 0.008*countries + 0.007*target + 0.006*decarbonization + 0.005*gas + 0.005*targets
+2014-08-30 13:45:33,444 : INFO : topic #6 (0.083): 0.017*education + 0.012*poverty + 0.010*children + 0.009*learning + 0.007*countries + 0.006*social + 0.006*access + 0.005*quality + 0.005*school + 0.005*women
+2014-08-30 13:45:33,445 : INFO : topic #7 (0.083): 0.038*health + 0.012*income + 0.012*countries + 0.005*low + 0.005*middle + 0.005*services + 0.004*care + 0.004*mortality + 0.004*world + 0.004*public
+2014-08-30 13:45:33,447 : INFO : topic #8 (0.083): 0.011*countries + 0.010*private + 0.009*sector + 0.009*aid + 0.006*developing + 0.006*country + 0.006*international + 0.005*risk + 0.005*financial + 0.004*donors
+2014-08-30 13:45:33,448 : INFO : topic #9 (0.083): 0.005*countries + 0.004*poverty + 0.003*private + 0.003*international + 0.003*sector + 0.003*health + 0.002*climate + 0.002*aid + 0.002*economic + 0.002*country
+2014-08-30 13:45:33,450 : INFO : topic #10 (0.083): 0.019*rights + 0.012*human + 0.010*international + 0.008*social + 0.008*women + 0.007*governance + 0.006*countries + 0.006*economic + 0.005*poverty + 0.004*world
+2014-08-30 13:45:33,451 : INFO : topic #11 (0.083): 0.013*health + 0.005*countries + 0.003*income + 0.002*climate + 0.002*services + 0.002*world + 0.002*new + 0.002*low + 0.002*www + 0.002*economic
+2014-08-30 13:45:33,452 : INFO : topic diff=0.545590, rho=0.408248
+2014-08-30 13:45:35,889 : INFO : -7.628 per-word bound, 197.9 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:45:35,889 : INFO : PROGRESS: pass 6, at document #12/12
+2014-08-30 13:45:36,129 : INFO : 4/12 documents converged within 50 iterations
+2014-08-30 13:45:36,149 : INFO : topic #0 (0.083): 0.017*food + 0.011*agriculture + 0.009*agricultural + 0.007*systems + 0.007*countries + 0.005*http + 0.005*www + 0.005*also + 0.005*land + 0.005*new
+2014-08-30 13:45:36,151 : INFO : topic #1 (0.083): 0.012*cid + 0.010*energy + 0.008*land + 0.007*water + 0.006*goal + 0.006*countries + 0.006*consumption + 0.005*climate + 0.005*food + 0.005*production
+2014-08-30 13:45:36,152 : INFO : topic #2 (0.083): 0.003*countries + 0.003*health + 0.002*energy + 0.002*climate + 0.002*change + 0.002*use + 0.002*also + 0.002*new + 0.001*food + 0.001*land
+2014-08-30 13:45:36,154 : INFO : topic #3 (0.083): 0.037*urban + 0.013*cities + 0.011*land + 0.007*growth + 0.007*expansion + 0.007*las + 0.006*economic + 0.006*housing + 0.006*areas + 0.006*population
+2014-08-30 13:45:36,155 : INFO : topic #4 (0.083): 0.009*biodiversity + 0.007*ecosystem + 0.007*marine + 0.006*services + 0.006*ocean + 0.006*ecosystems + 0.005*management + 0.005*international + 0.005*environmental + 0.005*climate
+2014-08-30 13:45:36,157 : INFO : topic #5 (0.083): 0.023*climate + 0.018*energy + 0.014*change + 0.012*emissions + 0.008*carbon + 0.008*countries + 0.007*target + 0.006*decarbonization + 0.005*gas + 0.005*targets
+2014-08-30 13:45:36,158 : INFO : topic #6 (0.083): 0.017*education + 0.012*poverty + 0.010*children + 0.009*learning + 0.008*countries + 0.006*social + 0.005*access + 0.005*quality + 0.005*school + 0.005*early
+2014-08-30 13:45:36,160 : INFO : topic #7 (0.083): 0.039*health + 0.013*income + 0.012*countries + 0.005*low + 0.005*middle + 0.005*services + 0.004*care + 0.004*mortality + 0.004*world + 0.004*public
+2014-08-30 13:45:36,161 : INFO : topic #8 (0.083): 0.011*countries + 0.010*private + 0.010*sector + 0.009*aid + 0.006*developing + 0.006*international + 0.006*country + 0.006*risk + 0.005*financial + 0.004*donors
+2014-08-30 13:45:36,163 : INFO : topic #9 (0.083): 0.004*countries + 0.003*poverty + 0.002*private + 0.002*international + 0.002*sector + 0.002*health + 0.002*climate + 0.002*aid + 0.002*economic + 0.002*country
+2014-08-30 13:45:36,165 : INFO : topic #10 (0.083): 0.019*rights + 0.012*human + 0.009*international + 0.008*women + 0.008*social + 0.007*governance + 0.006*economic + 0.005*countries + 0.005*poverty + 0.004*world
+2014-08-30 13:45:36,166 : INFO : topic #11 (0.083): 0.010*health + 0.004*countries + 0.003*income + 0.002*climate + 0.002*services + 0.002*world + 0.001*new + 0.001*low + 0.001*www + 0.001*economic
+2014-08-30 13:45:36,167 : INFO : topic diff=0.422750, rho=0.377964
+2014-08-30 13:45:38,555 : INFO : -7.616 per-word bound, 196.2 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:45:38,555 : INFO : PROGRESS: pass 7, at document #12/12
+2014-08-30 13:45:38,806 : INFO : 3/12 documents converged within 50 iterations
+2014-08-30 13:45:38,827 : INFO : topic #0 (0.083): 0.017*food + 0.011*agriculture + 0.009*agricultural + 0.007*systems + 0.007*countries + 0.005*http + 0.005*www + 0.005*also + 0.005*land + 0.005*new
+2014-08-30 13:45:38,829 : INFO : topic #1 (0.083): 0.012*cid + 0.009*energy + 0.008*land + 0.007*water + 0.006*goal + 0.006*countries + 0.006*consumption + 0.005*food + 0.005*climate + 0.005*production
+2014-08-30 13:45:38,830 : INFO : topic #2 (0.083): 0.002*countries + 0.002*health + 0.002*energy + 0.002*climate + 0.001*change + 0.001*use + 0.001*also + 0.001*new + 0.001*food + 0.001*land
+2014-08-30 13:45:38,832 : INFO : topic #3 (0.083): 0.037*urban + 0.013*cities + 0.011*land + 0.007*growth + 0.007*expansion + 0.007*las + 0.006*housing + 0.006*economic + 0.006*areas + 0.006*population
+2014-08-30 13:45:38,833 : INFO : topic #4 (0.083): 0.009*biodiversity + 0.008*ecosystem + 0.007*marine + 0.006*ocean + 0.006*services + 0.006*ecosystems + 0.005*management + 0.005*international + 0.005*environmental + 0.005*climate
+2014-08-30 13:45:38,835 : INFO : topic #5 (0.083): 0.023*climate + 0.018*energy + 0.014*change + 0.012*emissions + 0.008*carbon + 0.008*countries + 0.007*target + 0.006*decarbonization + 0.005*gas + 0.005*targets
+2014-08-30 13:45:38,836 : INFO : topic #6 (0.083): 0.017*education + 0.012*poverty + 0.011*children + 0.009*learning + 0.008*countries + 0.006*social + 0.005*access + 0.005*quality + 0.005*school + 0.005*early
+2014-08-30 13:45:38,838 : INFO : topic #7 (0.083): 0.039*health + 0.013*income + 0.012*countries + 0.005*low + 0.005*middle + 0.005*services + 0.005*care + 0.004*mortality + 0.004*public + 0.004*world
+2014-08-30 13:45:38,839 : INFO : topic #8 (0.083): 0.011*countries + 0.010*private + 0.010*sector + 0.009*aid + 0.006*developing + 0.006*international + 0.006*country + 0.006*risk + 0.005*financial + 0.005*donors
+2014-08-30 13:45:38,841 : INFO : topic #9 (0.083): 0.003*countries + 0.002*poverty + 0.002*private + 0.002*international + 0.002*sector + 0.002*health + 0.001*climate + 0.001*aid + 0.001*economic + 0.001*country
+2014-08-30 13:45:38,843 : INFO : topic #10 (0.083): 0.019*rights + 0.012*human + 0.009*international + 0.009*women + 0.008*social + 0.007*governance + 0.006*economic + 0.005*countries + 0.005*poverty + 0.005*gender
+2014-08-30 13:45:38,844 : INFO : topic #11 (0.083): 0.008*health + 0.003*countries + 0.002*income + 0.001*climate + 0.001*services + 0.001*world + 0.001*new + 0.001*low + 0.001*www + 0.001*economic
+2014-08-30 13:45:38,845 : INFO : topic diff=0.328735, rho=0.353553
+2014-08-30 13:45:41,270 : INFO : -7.608 per-word bound, 195.1 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:45:41,271 : INFO : PROGRESS: pass 8, at document #12/12
+2014-08-30 13:45:41,515 : INFO : 3/12 documents converged within 50 iterations
+2014-08-30 13:45:41,536 : INFO : topic #0 (0.083): 0.017*food + 0.011*agriculture + 0.009*agricultural + 0.007*systems + 0.007*countries + 0.005*http + 0.005*www + 0.005*also + 0.005*land + 0.005*new
+2014-08-30 13:45:41,538 : INFO : topic #1 (0.083): 0.012*cid + 0.009*energy + 0.008*land + 0.007*water + 0.006*countries + 0.006*goal + 0.006*consumption + 0.005*food + 0.005*production + 0.005*climate
+2014-08-30 13:45:41,540 : INFO : topic #2 (0.083): 0.002*countries + 0.002*health + 0.001*energy + 0.001*climate + 0.001*change + 0.001*use + 0.001*also + 0.001*new + 0.001*food + 0.001*land
+2014-08-30 13:45:41,541 : INFO : topic #3 (0.083): 0.037*urban + 0.014*cities + 0.011*land + 0.007*growth + 0.007*expansion + 0.007*las + 0.006*housing + 0.006*economic + 0.006*areas + 0.006*population
+2014-08-30 13:45:41,543 : INFO : topic #4 (0.083): 0.010*biodiversity + 0.008*ecosystem + 0.007*marine + 0.007*ocean + 0.007*services + 0.006*ecosystems + 0.006*management + 0.005*international + 0.005*environmental + 0.005*climate
+2014-08-30 13:45:41,544 : INFO : topic #5 (0.083): 0.023*climate + 0.018*energy + 0.014*change + 0.012*emissions + 0.008*carbon + 0.008*countries + 0.007*target + 0.006*decarbonization + 0.005*gas + 0.005*targets
+2014-08-30 13:45:41,546 : INFO : topic #6 (0.083): 0.017*education + 0.012*poverty + 0.011*children + 0.009*learning + 0.008*countries + 0.006*social + 0.005*quality + 0.005*access + 0.005*school + 0.005*early
+2014-08-30 13:45:41,547 : INFO : topic #7 (0.083): 0.039*health + 0.013*income + 0.012*countries + 0.005*low + 0.005*middle + 0.005*services + 0.005*care + 0.004*mortality + 0.004*public + 0.004*world
+2014-08-30 13:45:41,549 : INFO : topic #8 (0.083): 0.011*countries + 0.010*private + 0.010*sector + 0.009*aid + 0.006*international + 0.006*developing + 0.006*country + 0.006*risk + 0.005*financial + 0.005*donors
+2014-08-30 13:45:41,550 : INFO : topic #9 (0.083): 0.002*countries + 0.002*poverty + 0.001*private + 0.001*international + 0.001*sector + 0.001*health + 0.001*climate + 0.001*aid + 0.001*economic + 0.001*country
+2014-08-30 13:45:41,552 : INFO : topic #10 (0.083): 0.020*rights + 0.013*human + 0.009*international + 0.009*women + 0.008*social + 0.007*governance + 0.006*economic + 0.005*countries + 0.005*poverty + 0.005*gender
+2014-08-30 13:45:41,554 : INFO : topic #11 (0.083): 0.006*health + 0.002*countries + 0.001*income + 0.001*climate + 0.001*services + 0.001*world + 0.001*new + 0.001*low + 0.001*www + 0.001*economic
+2014-08-30 13:45:41,555 : INFO : topic diff=0.256294, rho=0.333333
+2014-08-30 13:45:43,924 : INFO : -7.603 per-word bound, 194.4 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:45:43,924 : INFO : PROGRESS: pass 9, at document #12/12
+2014-08-30 13:45:44,170 : INFO : 3/12 documents converged within 50 iterations
+2014-08-30 13:45:44,192 : INFO : topic #0 (0.083): 0.017*food + 0.011*agriculture + 0.009*agricultural + 0.007*systems + 0.007*countries + 0.005*http + 0.005*www + 0.005*also + 0.005*land + 0.005*new
+2014-08-30 13:45:44,194 : INFO : topic #1 (0.083): 0.012*cid + 0.009*energy + 0.008*land + 0.007*water + 0.006*countries + 0.006*goal + 0.006*consumption + 0.005*food + 0.005*production + 0.005*resources
+2014-08-30 13:45:44,195 : INFO : topic #2 (0.083): 0.001*countries + 0.001*health + 0.001*energy + 0.001*climate + 0.001*change + 0.001*use + 0.001*also + 0.001*new + 0.001*food + 0.001*land
+2014-08-30 13:45:44,197 : INFO : topic #3 (0.083): 0.038*urban + 0.014*cities + 0.011*land + 0.007*growth + 0.007*expansion + 0.007*las + 0.006*housing + 0.006*economic + 0.006*areas + 0.006*population
+2014-08-30 13:45:44,198 : INFO : topic #4 (0.083): 0.010*biodiversity + 0.008*ecosystem + 0.007*marine + 0.007*ocean + 0.007*services + 0.006*ecosystems + 0.006*management + 0.006*international + 0.005*environmental + 0.005*climate
+2014-08-30 13:45:44,200 : INFO : topic #5 (0.083): 0.023*climate + 0.018*energy + 0.014*change + 0.012*emissions + 0.008*carbon + 0.008*countries + 0.007*target + 0.006*decarbonization + 0.005*gas + 0.005*targets
+2014-08-30 13:45:44,201 : INFO : topic #6 (0.083): 0.017*education + 0.013*poverty + 0.011*children + 0.010*learning + 0.008*countries + 0.006*social + 0.005*quality + 0.005*access + 0.005*school + 0.005*early
+2014-08-30 13:45:44,203 : INFO : topic #7 (0.083): 0.039*health + 0.013*income + 0.012*countries + 0.005*low + 0.005*middle + 0.005*services + 0.005*care + 0.005*mortality + 0.004*public + 0.004*world
+2014-08-30 13:45:44,205 : INFO : topic #8 (0.083): 0.011*countries + 0.010*private + 0.010*sector + 0.009*aid + 0.006*international + 0.006*developing + 0.006*country + 0.006*risk + 0.005*financial + 0.005*donors
+2014-08-30 13:45:44,206 : INFO : topic #9 (0.083): 0.002*countries + 0.001*poverty + 0.001*private + 0.001*international + 0.001*sector + 0.001*health + 0.001*climate + 0.001*aid + 0.001*economic + 0.001*country
+2014-08-30 13:45:44,207 : INFO : topic #10 (0.083): 0.020*rights + 0.013*human + 0.009*women + 0.009*international + 0.009*social + 0.007*governance + 0.006*economic + 0.005*countries + 0.005*poverty + 0.005*gender
+2014-08-30 13:45:44,209 : INFO : topic #11 (0.083): 0.004*health + 0.002*countries + 0.001*income + 0.001*climate + 0.001*services + 0.001*world + 0.001*new + 0.001*low + 0.001*www + 0.001*economic
+2014-08-30 13:45:44,210 : INFO : topic diff=0.200309, rho=0.316228
+2014-08-30 13:45:46,545 : INFO : -7.599 per-word bound, 193.9 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:45:46,546 : INFO : PROGRESS: pass 10, at document #12/12
+2014-08-30 13:45:46,792 : INFO : 3/12 documents converged within 50 iterations
+2014-08-30 13:45:46,813 : INFO : topic #0 (0.083): 0.017*food + 0.011*agriculture + 0.009*agricultural + 0.007*systems + 0.007*countries + 0.005*http + 0.005*www + 0.005*also + 0.005*land + 0.005*new
+2014-08-30 13:45:46,815 : INFO : topic #1 (0.083): 0.012*cid + 0.009*energy + 0.008*land + 0.008*water + 0.006*countries + 0.006*goal + 0.006*consumption + 0.005*food + 0.005*production + 0.005*resources
+2014-08-30 13:45:46,816 : INFO : topic #2 (0.083): 0.001*countries + 0.001*health + 0.001*energy + 0.001*climate + 0.001*change + 0.001*use + 0.001*also + 0.001*new + 0.001*food + 0.001*land
+2014-08-30 13:45:46,818 : INFO : topic #3 (0.083): 0.038*urban + 0.014*cities + 0.011*land + 0.007*growth + 0.007*expansion + 0.007*las + 0.006*housing + 0.006*economic + 0.006*areas + 0.006*population
+2014-08-30 13:45:46,820 : INFO : topic #4 (0.083): 0.010*biodiversity + 0.008*ecosystem + 0.008*marine + 0.007*ocean + 0.007*services + 0.007*ecosystems + 0.006*international + 0.006*management + 0.005*environmental + 0.005*climate
+2014-08-30 13:45:46,821 : INFO : topic #5 (0.083): 0.023*climate + 0.018*energy + 0.014*change + 0.012*emissions + 0.008*carbon + 0.008*countries + 0.007*target + 0.006*decarbonization + 0.005*gas + 0.005*targets
+2014-08-30 13:45:46,823 : INFO : topic #6 (0.083): 0.017*education + 0.013*poverty + 0.011*children + 0.010*learning + 0.008*countries + 0.006*social + 0.005*quality + 0.005*school + 0.005*access + 0.005*early
+2014-08-30 13:45:46,824 : INFO : topic #7 (0.083): 0.040*health + 0.013*income + 0.012*countries + 0.005*low + 0.005*middle + 0.005*services + 0.005*care + 0.005*mortality + 0.004*public + 0.004*world
+2014-08-30 13:45:46,826 : INFO : topic #8 (0.083): 0.011*countries + 0.010*private + 0.010*sector + 0.009*aid + 0.006*international + 0.006*developing + 0.006*country + 0.006*risk + 0.005*financial + 0.005*donors
+2014-08-30 13:45:46,827 : INFO : topic #9 (0.083): 0.001*countries + 0.001*poverty + 0.001*private + 0.001*international + 0.001*sector + 0.001*health + 0.001*climate + 0.001*aid + 0.001*economic + 0.001*country
+2014-08-30 13:45:46,829 : INFO : topic #10 (0.083): 0.020*rights + 0.013*human + 0.010*women + 0.009*international + 0.009*social + 0.007*governance + 0.006*economic + 0.005*countries + 0.005*poverty + 0.005*gender
+2014-08-30 13:45:46,831 : INFO : topic #11 (0.083): 0.003*health + 0.001*countries + 0.001*income + 0.001*climate + 0.001*services + 0.001*world + 0.001*new + 0.000*low + 0.000*www + 0.000*economic
+2014-08-30 13:45:46,831 : INFO : topic diff=0.156994, rho=0.301511
+2014-08-30 13:45:49,131 : INFO : -7.597 per-word bound, 193.6 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:45:49,131 : INFO : PROGRESS: pass 11, at document #12/12
+2014-08-30 13:45:49,381 : INFO : 3/12 documents converged within 50 iterations
+2014-08-30 13:45:49,402 : INFO : topic #0 (0.083): 0.017*food + 0.011*agriculture + 0.009*agricultural + 0.007*systems + 0.007*countries + 0.005*http + 0.005*www + 0.005*also + 0.005*land + 0.005*new
+2014-08-30 13:45:49,404 : INFO : topic #1 (0.083): 0.012*cid + 0.009*energy + 0.009*land + 0.008*water + 0.006*countries + 0.006*goal + 0.006*consumption + 0.005*food + 0.005*production + 0.005*resources
+2014-08-30 13:45:49,406 : INFO : topic #2 (0.083): 0.001*countries + 0.001*health + 0.001*energy + 0.001*climate + 0.000*change + 0.000*use + 0.000*also + 0.000*new + 0.000*food + 0.000*land
+2014-08-30 13:45:49,407 : INFO : topic #3 (0.083): 0.038*urban + 0.014*cities + 0.011*land + 0.007*growth + 0.007*expansion + 0.007*las + 0.006*housing + 0.006*economic + 0.006*areas + 0.006*population
+2014-08-30 13:45:49,409 : INFO : topic #4 (0.083): 0.010*biodiversity + 0.008*ecosystem + 0.008*marine + 0.007*ocean + 0.007*services + 0.007*ecosystems + 0.006*international + 0.006*management + 0.005*environmental + 0.005*climate
+2014-08-30 13:45:49,410 : INFO : topic #5 (0.083): 0.023*climate + 0.018*energy + 0.014*change + 0.012*emissions + 0.008*carbon + 0.008*countries + 0.007*target + 0.006*decarbonization + 0.005*gas + 0.005*targets
+2014-08-30 13:45:49,412 : INFO : topic #6 (0.083): 0.017*education + 0.013*poverty + 0.011*children + 0.010*learning + 0.008*countries + 0.006*social + 0.006*quality + 0.005*school + 0.005*access + 0.005*early
+2014-08-30 13:45:49,413 : INFO : topic #7 (0.083): 0.040*health + 0.013*income + 0.012*countries + 0.005*low + 0.005*middle + 0.005*services + 0.005*care + 0.005*mortality + 0.004*public + 0.004*world
+2014-08-30 13:45:49,415 : INFO : topic #8 (0.083): 0.011*countries + 0.010*private + 0.010*sector + 0.009*aid + 0.007*international + 0.006*developing + 0.006*country + 0.006*risk + 0.005*financial + 0.005*donors
+2014-08-30 13:45:49,416 : INFO : topic #9 (0.083): 0.001*countries + 0.001*poverty + 0.001*private + 0.001*international + 0.001*sector + 0.001*health + 0.001*climate + 0.001*aid + 0.000*economic + 0.000*country
+2014-08-30 13:45:49,418 : INFO : topic #10 (0.083): 0.020*rights + 0.013*human + 0.010*women + 0.009*international + 0.009*social + 0.007*governance + 0.006*economic + 0.005*poverty + 0.005*countries + 0.005*gender
+2014-08-30 13:45:49,419 : INFO : topic #11 (0.083): 0.002*health + 0.001*countries + 0.001*income + 0.000*climate + 0.000*services + 0.000*world + 0.000*new + 0.000*low + 0.000*www + 0.000*economic
+2014-08-30 13:45:49,420 : INFO : topic diff=0.123432, rho=0.288675
+2014-08-30 13:45:51,970 : INFO : -7.595 per-word bound, 193.4 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:45:51,970 : INFO : PROGRESS: pass 12, at document #12/12
+2014-08-30 13:45:52,228 : INFO : 3/12 documents converged within 50 iterations
+2014-08-30 13:45:52,249 : INFO : topic #0 (0.083): 0.017*food + 0.011*agriculture + 0.009*agricultural + 0.007*systems + 0.007*countries + 0.005*http + 0.005*www + 0.005*also + 0.005*land + 0.005*new
+2014-08-30 13:45:52,251 : INFO : topic #1 (0.083): 0.012*cid + 0.009*energy + 0.009*land + 0.008*water + 0.006*countries + 0.006*goal + 0.006*consumption + 0.005*food + 0.005*production + 0.005*resources
+2014-08-30 13:45:52,252 : INFO : topic #2 (0.083): 0.001*countries + 0.001*health + 0.000*energy + 0.000*climate + 0.000*change + 0.000*use + 0.000*also + 0.000*new + 0.000*food + 0.000*land
+2014-08-30 13:45:52,254 : INFO : topic #3 (0.083): 0.038*urban + 0.014*cities + 0.011*land + 0.007*growth + 0.007*expansion + 0.007*las + 0.006*housing + 0.006*economic + 0.006*areas + 0.006*population
+2014-08-30 13:45:52,256 : INFO : topic #4 (0.083): 0.010*biodiversity + 0.008*ecosystem + 0.008*marine + 0.007*ocean + 0.007*services + 0.007*ecosystems + 0.006*international + 0.006*management + 0.005*environmental + 0.005*climate
+2014-08-30 13:45:52,257 : INFO : topic #5 (0.083): 0.023*climate + 0.018*energy + 0.014*change + 0.012*emissions + 0.008*carbon + 0.008*countries + 0.007*target + 0.006*decarbonization + 0.005*gas + 0.005*targets
+2014-08-30 13:45:52,258 : INFO : topic #6 (0.083): 0.017*education + 0.013*poverty + 0.011*children + 0.010*learning + 0.008*countries + 0.006*social + 0.006*quality + 0.005*school + 0.005*access + 0.005*early
+2014-08-30 13:45:52,260 : INFO : topic #7 (0.083): 0.040*health + 0.013*income + 0.012*countries + 0.005*low + 0.005*middle + 0.005*services + 0.005*care + 0.005*mortality + 0.004*public + 0.004*world
+2014-08-30 13:45:52,261 : INFO : topic #8 (0.083): 0.011*countries + 0.010*private + 0.010*sector + 0.009*aid + 0.007*international + 0.006*developing + 0.006*country + 0.006*risk + 0.005*financial + 0.005*donors
+2014-08-30 13:45:52,263 : INFO : topic #9 (0.083): 0.001*countries + 0.001*poverty + 0.000*private + 0.000*international + 0.000*sector + 0.000*health + 0.000*climate + 0.000*aid + 0.000*economic + 0.000*country
+2014-08-30 13:45:52,265 : INFO : topic #10 (0.083): 0.020*rights + 0.013*human + 0.010*women + 0.009*international + 0.009*social + 0.007*governance + 0.006*economic + 0.005*poverty + 0.005*countries + 0.005*gender
+2014-08-30 13:45:52,267 : INFO : topic #11 (0.083): 0.002*health + 0.001*countries + 0.001*income + 0.000*climate + 0.000*services + 0.000*world + 0.000*new + 0.000*low + 0.000*www + 0.000*economic
+2014-08-30 13:45:52,267 : INFO : topic diff=0.097395, rho=0.277350
+2014-08-30 13:45:54,947 : INFO : -7.594 per-word bound, 193.2 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:45:54,947 : INFO : PROGRESS: pass 13, at document #12/12
+2014-08-30 13:45:55,220 : INFO : 3/12 documents converged within 50 iterations
+2014-08-30 13:45:55,242 : INFO : topic #0 (0.083): 0.017*food + 0.011*agriculture + 0.009*agricultural + 0.007*systems + 0.007*countries + 0.005*http + 0.005*www + 0.005*also + 0.005*land + 0.005*new
+2014-08-30 13:45:55,243 : INFO : topic #1 (0.083): 0.012*cid + 0.009*energy + 0.009*land + 0.008*water + 0.006*countries + 0.006*goal + 0.006*consumption + 0.005*food + 0.005*production + 0.005*resources
+2014-08-30 13:45:55,245 : INFO : topic #2 (0.083): 0.000*countries + 0.000*health + 0.000*energy + 0.000*climate + 0.000*change + 0.000*use + 0.000*also + 0.000*new + 0.000*food + 0.000*land
+2014-08-30 13:45:55,246 : INFO : topic #3 (0.083): 0.038*urban + 0.014*cities + 0.011*land + 0.007*growth + 0.007*expansion + 0.007*las + 0.006*housing + 0.006*economic + 0.006*areas + 0.006*population
+2014-08-30 13:45:55,248 : INFO : topic #4 (0.083): 0.010*biodiversity + 0.009*ecosystem + 0.008*marine + 0.007*ocean + 0.007*services + 0.007*ecosystems + 0.006*international + 0.006*management + 0.005*environmental + 0.005*climate
+2014-08-30 13:45:55,249 : INFO : topic #5 (0.083): 0.023*climate + 0.018*energy + 0.014*change + 0.012*emissions + 0.008*carbon + 0.008*countries + 0.007*target + 0.006*decarbonization + 0.005*gas + 0.005*targets
+2014-08-30 13:45:55,251 : INFO : topic #6 (0.083): 0.017*education + 0.013*poverty + 0.011*children + 0.010*learning + 0.008*countries + 0.006*social + 0.006*quality + 0.005*school + 0.005*access + 0.005*early
+2014-08-30 13:45:55,252 : INFO : topic #7 (0.083): 0.040*health + 0.013*income + 0.012*countries + 0.005*low + 0.005*middle + 0.005*services + 0.005*care + 0.005*mortality + 0.004*public + 0.004*world
+2014-08-30 13:45:55,254 : INFO : topic #8 (0.083): 0.011*countries + 0.010*private + 0.010*sector + 0.009*aid + 0.007*international + 0.006*developing + 0.006*country + 0.006*risk + 0.005*financial + 0.005*donors
+2014-08-30 13:45:55,255 : INFO : topic #9 (0.083): 0.001*countries + 0.000*poverty + 0.000*private + 0.000*international + 0.000*sector + 0.000*health + 0.000*climate + 0.000*aid + 0.000*economic + 0.000*country
+2014-08-30 13:45:55,257 : INFO : topic #10 (0.083): 0.020*rights + 0.013*human + 0.010*women + 0.009*international + 0.009*social + 0.007*governance + 0.006*economic + 0.005*poverty + 0.005*gender + 0.005*countries
+2014-08-30 13:45:55,259 : INFO : topic #11 (0.083): 0.001*health + 0.001*countries + 0.000*income + 0.000*climate + 0.000*services + 0.000*world + 0.000*new + 0.000*low + 0.000*www + 0.000*economic
+2014-08-30 13:45:55,260 : INFO : topic diff=0.077164, rho=0.267261
+2014-08-30 13:45:58,044 : INFO : -7.593 per-word bound, 193.1 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:45:58,044 : INFO : PROGRESS: pass 14, at document #12/12
+2014-08-30 13:45:58,300 : INFO : 3/12 documents converged within 50 iterations
+2014-08-30 13:45:58,323 : INFO : topic #0 (0.083): 0.017*food + 0.011*agriculture + 0.009*agricultural + 0.007*systems + 0.007*countries + 0.005*http + 0.005*www + 0.005*also + 0.005*land + 0.005*new
+2014-08-30 13:45:58,325 : INFO : topic #1 (0.083): 0.012*cid + 0.009*energy + 0.009*land + 0.008*water + 0.006*countries + 0.006*goal + 0.006*consumption + 0.005*food + 0.005*production + 0.005*resources
+2014-08-30 13:45:58,326 : INFO : topic #2 (0.083): 0.000*countries + 0.000*health + 0.000*energy + 0.000*climate + 0.000*change + 0.000*use + 0.000*also + 0.000*new + 0.000*food + 0.000*land
+2014-08-30 13:45:58,328 : INFO : topic #3 (0.083): 0.038*urban + 0.014*cities + 0.011*land + 0.007*growth + 0.007*expansion + 0.007*las + 0.006*housing + 0.006*economic + 0.006*areas + 0.006*population
+2014-08-30 13:45:58,329 : INFO : topic #4 (0.083): 0.010*biodiversity + 0.009*ecosystem + 0.008*marine + 0.007*ocean + 0.007*services + 0.007*ecosystems + 0.006*international + 0.006*management + 0.005*environmental + 0.005*climate
+2014-08-30 13:45:58,331 : INFO : topic #5 (0.083): 0.023*climate + 0.018*energy + 0.014*change + 0.012*emissions + 0.008*carbon + 0.008*countries + 0.007*target + 0.006*decarbonization + 0.005*gas + 0.005*targets
+2014-08-30 13:45:58,332 : INFO : topic #6 (0.083): 0.017*education + 0.013*poverty + 0.011*children + 0.010*learning + 0.008*countries + 0.006*social + 0.006*quality + 0.005*school + 0.005*access + 0.005*early
+2014-08-30 13:45:58,334 : INFO : topic #7 (0.083): 0.040*health + 0.013*income + 0.012*countries + 0.005*low + 0.005*middle + 0.005*services + 0.005*care + 0.005*mortality + 0.004*public + 0.004*world
+2014-08-30 13:45:58,336 : INFO : topic #8 (0.083): 0.011*countries + 0.010*private + 0.010*sector + 0.009*aid + 0.007*international + 0.006*developing + 0.006*country + 0.006*risk + 0.005*financial + 0.005*donors
+2014-08-30 13:45:58,337 : INFO : topic #9 (0.083): 0.001*countries + 0.000*poverty + 0.000*private + 0.000*international + 0.000*sector + 0.000*health + 0.000*climate + 0.000*aid + 0.000*economic + 0.000*country
+2014-08-30 13:45:58,339 : INFO : topic #10 (0.083): 0.020*rights + 0.013*human + 0.010*women + 0.009*international + 0.009*social + 0.007*governance + 0.006*economic + 0.005*poverty + 0.005*gender + 0.005*countries
+2014-08-30 13:45:58,341 : INFO : topic #11 (0.083): 0.001*health + 0.000*countries + 0.000*income + 0.000*climate + 0.000*services + 0.000*world + 0.000*new + 0.000*low + 0.000*www + 0.000*economic
+2014-08-30 13:45:58,342 : INFO : topic diff=0.061412, rho=0.258199
+2014-08-30 13:46:00,962 : INFO : -7.593 per-word bound, 193.0 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:46:00,962 : INFO : PROGRESS: pass 15, at document #12/12
+2014-08-30 13:46:01,217 : INFO : 3/12 documents converged within 50 iterations
+2014-08-30 13:46:01,238 : INFO : topic #0 (0.083): 0.017*food + 0.011*agriculture + 0.009*agricultural + 0.007*systems + 0.007*countries + 0.005*http + 0.005*www + 0.005*also + 0.005*land + 0.005*new
+2014-08-30 13:46:01,239 : INFO : topic #1 (0.083): 0.012*cid + 0.009*energy + 0.009*land + 0.008*water + 0.006*countries + 0.006*goal + 0.006*consumption + 0.005*food + 0.005*production + 0.005*resources
+2014-08-30 13:46:01,240 : INFO : topic #2 (0.083): 0.000*countries + 0.000*health + 0.000*energy + 0.000*climate + 0.000*change + 0.000*use + 0.000*also + 0.000*new + 0.000*food + 0.000*land
+2014-08-30 13:46:01,242 : INFO : topic #3 (0.083): 0.038*urban + 0.014*cities + 0.011*land + 0.007*growth + 0.007*expansion + 0.007*las + 0.006*housing + 0.006*economic + 0.006*areas + 0.006*population
+2014-08-30 13:46:01,244 : INFO : topic #4 (0.083): 0.010*biodiversity + 0.009*ecosystem + 0.008*marine + 0.007*ocean + 0.007*services + 0.007*ecosystems + 0.006*international + 0.006*management + 0.005*environmental + 0.005*climate
+2014-08-30 13:46:01,245 : INFO : topic #5 (0.083): 0.023*climate + 0.018*energy + 0.014*change + 0.012*emissions + 0.008*carbon + 0.008*countries + 0.007*target + 0.006*decarbonization + 0.005*gas + 0.005*targets
+2014-08-30 13:46:01,247 : INFO : topic #6 (0.083): 0.017*education + 0.013*poverty + 0.011*children + 0.010*learning + 0.008*countries + 0.006*social + 0.006*quality + 0.005*school + 0.005*access + 0.005*early
+2014-08-30 13:46:01,249 : INFO : topic #7 (0.083): 0.040*health + 0.013*income + 0.012*countries + 0.005*low + 0.005*middle + 0.005*services + 0.005*care + 0.005*mortality + 0.004*public + 0.004*world
+2014-08-30 13:46:01,250 : INFO : topic #8 (0.083): 0.011*countries + 0.010*private + 0.010*sector + 0.009*aid + 0.007*international + 0.006*developing + 0.006*country + 0.006*risk + 0.005*financial + 0.005*donors
+2014-08-30 13:46:01,251 : INFO : topic #9 (0.083): 0.000*countries + 0.000*poverty + 0.000*private + 0.000*international + 0.000*sector + 0.000*health + 0.000*climate + 0.000*aid + 0.000*economic + 0.000*country
+2014-08-30 13:46:01,253 : INFO : topic #10 (0.083): 0.020*rights + 0.013*human + 0.010*women + 0.009*international + 0.009*social + 0.007*governance + 0.006*economic + 0.005*poverty + 0.005*gender + 0.005*countries
+2014-08-30 13:46:01,255 : INFO : topic #11 (0.083): 0.001*health + 0.000*countries + 0.000*income + 0.000*climate + 0.000*services + 0.000*world + 0.000*new + 0.000*low + 0.000*www + 0.000*economic
+2014-08-30 13:46:01,256 : INFO : topic diff=0.049120, rho=0.250000
+2014-08-30 13:46:03,696 : INFO : -7.592 per-word bound, 193.0 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:46:03,697 : INFO : PROGRESS: pass 16, at document #12/12
+2014-08-30 13:46:04,018 : INFO : 3/12 documents converged within 50 iterations
+2014-08-30 13:46:04,040 : INFO : topic #0 (0.083): 0.017*food + 0.011*agriculture + 0.009*agricultural + 0.007*systems + 0.007*countries + 0.005*http + 0.005*www + 0.005*also + 0.005*land + 0.005*new
+2014-08-30 13:46:04,042 : INFO : topic #1 (0.083): 0.012*cid + 0.009*energy + 0.009*land + 0.008*water + 0.006*countries + 0.006*goal + 0.006*consumption + 0.005*food + 0.005*production + 0.005*resources
+2014-08-30 13:46:04,043 : INFO : topic #2 (0.083): 0.000*countries + 0.000*health + 0.000*energy + 0.000*climate + 0.000*change + 0.000*use + 0.000*also + 0.000*new + 0.000*food + 0.000*land
+2014-08-30 13:46:04,044 : INFO : topic #3 (0.083): 0.038*urban + 0.014*cities + 0.011*land + 0.007*growth + 0.007*expansion + 0.007*las + 0.006*housing + 0.006*economic + 0.006*areas + 0.006*population
+2014-08-30 13:46:04,046 : INFO : topic #4 (0.083): 0.010*biodiversity + 0.009*ecosystem + 0.008*marine + 0.007*ocean + 0.007*services + 0.007*ecosystems + 0.006*international + 0.006*management + 0.005*environmental + 0.005*climate
+2014-08-30 13:46:04,048 : INFO : topic #5 (0.083): 0.023*climate + 0.019*energy + 0.014*change + 0.012*emissions + 0.008*carbon + 0.008*countries + 0.007*target + 0.006*decarbonization + 0.005*gas + 0.005*targets
+2014-08-30 13:46:04,049 : INFO : topic #6 (0.083): 0.017*education + 0.013*poverty + 0.011*children + 0.010*learning + 0.008*countries + 0.006*social + 0.006*quality + 0.005*school + 0.005*access + 0.005*early
+2014-08-30 13:46:04,051 : INFO : topic #7 (0.083): 0.040*health + 0.013*income + 0.012*countries + 0.005*low + 0.005*middle + 0.005*services + 0.005*care + 0.005*mortality + 0.004*public + 0.004*world
+2014-08-30 13:46:04,052 : INFO : topic #8 (0.083): 0.011*countries + 0.010*private + 0.010*sector + 0.009*aid + 0.007*international + 0.006*developing + 0.006*country + 0.006*risk + 0.005*financial + 0.005*donors
+2014-08-30 13:46:04,054 : INFO : topic #9 (0.083): 0.000*countries + 0.000*poverty + 0.000*private + 0.000*international + 0.000*sector + 0.000*health + 0.000*climate + 0.000*aid + 0.000*economic + 0.000*country
+2014-08-30 13:46:04,055 : INFO : topic #10 (0.083): 0.020*rights + 0.013*human + 0.010*women + 0.009*international + 0.009*social + 0.007*governance + 0.006*economic + 0.005*gender + 0.005*poverty + 0.005*countries
+2014-08-30 13:46:04,057 : INFO : topic #11 (0.083): 0.001*health + 0.000*countries + 0.000*income + 0.000*climate + 0.000*services + 0.000*world + 0.000*new + 0.000*low + 0.000*www + 0.000*economic
+2014-08-30 13:46:04,058 : INFO : topic diff=0.039509, rho=0.242536
+2014-08-30 13:46:06,502 : INFO : -7.592 per-word bound, 192.9 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:46:06,502 : INFO : PROGRESS: pass 17, at document #12/12
+2014-08-30 13:46:06,751 : INFO : 2/12 documents converged within 50 iterations
+2014-08-30 13:46:06,771 : INFO : topic #0 (0.083): 0.017*food + 0.011*agriculture + 0.009*agricultural + 0.007*systems + 0.007*countries + 0.005*http + 0.005*www + 0.005*also + 0.005*land + 0.005*new
+2014-08-30 13:46:06,773 : INFO : topic #1 (0.083): 0.012*cid + 0.009*energy + 0.009*land + 0.008*water + 0.006*countries + 0.006*goal + 0.006*consumption + 0.005*food + 0.005*production + 0.005*resources
+2014-08-30 13:46:06,774 : INFO : topic #2 (0.083): 0.000*countries + 0.000*health + 0.000*energy + 0.000*climate + 0.000*change + 0.000*use + 0.000*also + 0.000*new + 0.000*food + 0.000*land
+2014-08-30 13:46:06,775 : INFO : topic #3 (0.083): 0.038*urban + 0.014*cities + 0.011*land + 0.007*growth + 0.007*expansion + 0.007*las + 0.006*housing + 0.006*economic + 0.006*areas + 0.006*population
+2014-08-30 13:46:06,777 : INFO : topic #4 (0.083): 0.010*biodiversity + 0.009*ecosystem + 0.008*marine + 0.007*ocean + 0.007*services + 0.007*ecosystems + 0.006*international + 0.006*management + 0.005*environmental + 0.005*climate
+2014-08-30 13:46:06,779 : INFO : topic #5 (0.083): 0.023*climate + 0.019*energy + 0.014*change + 0.012*emissions + 0.008*carbon + 0.008*countries + 0.007*target + 0.006*decarbonization + 0.005*gas + 0.005*targets
+2014-08-30 13:46:06,780 : INFO : topic #6 (0.083): 0.017*education + 0.013*poverty + 0.011*children + 0.010*learning + 0.008*countries + 0.006*social + 0.006*quality + 0.005*school + 0.005*access + 0.005*early
+2014-08-30 13:46:06,782 : INFO : topic #7 (0.083): 0.040*health + 0.013*income + 0.012*countries + 0.005*low + 0.005*middle + 0.005*services + 0.005*care + 0.005*mortality + 0.004*public + 0.004*world
+2014-08-30 13:46:06,784 : INFO : topic #8 (0.083): 0.011*countries + 0.010*private + 0.010*sector + 0.009*aid + 0.007*international + 0.006*developing + 0.006*country + 0.006*risk + 0.005*financial + 0.005*donors
+2014-08-30 13:46:06,785 : INFO : topic #9 (0.083): 0.000*countries + 0.000*poverty + 0.000*private + 0.000*international + 0.000*sector + 0.000*health + 0.000*climate + 0.000*aid + 0.000*economic + 0.000*country
+2014-08-30 13:46:06,787 : INFO : topic #10 (0.083): 0.020*rights + 0.013*human + 0.010*women + 0.009*international + 0.009*social + 0.007*governance + 0.006*economic + 0.005*gender + 0.005*poverty + 0.005*countries
+2014-08-30 13:46:06,788 : INFO : topic #11 (0.083): 0.001*health + 0.000*countries + 0.000*income + 0.000*climate + 0.000*services + 0.000*world + 0.000*new + 0.000*low + 0.000*www + 0.000*economic
+2014-08-30 13:46:06,789 : INFO : topic diff=0.031969, rho=0.235702
+2014-08-30 13:46:09,191 : INFO : -7.592 per-word bound, 192.9 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:46:09,192 : INFO : PROGRESS: pass 18, at document #12/12
+2014-08-30 13:46:09,443 : INFO : 1/12 documents converged within 50 iterations
+2014-08-30 13:46:09,465 : INFO : topic #0 (0.083): 0.017*food + 0.011*agriculture + 0.009*agricultural + 0.007*systems + 0.007*countries + 0.005*http + 0.005*www + 0.005*also + 0.005*land + 0.005*new
+2014-08-30 13:46:09,467 : INFO : topic #1 (0.083): 0.012*cid + 0.009*energy + 0.009*land + 0.008*water + 0.006*countries + 0.006*goal + 0.006*consumption + 0.005*food + 0.005*production + 0.005*resources
+2014-08-30 13:46:09,468 : INFO : topic #2 (0.083): 0.000*countries + 0.000*health + 0.000*energy + 0.000*climate + 0.000*change + 0.000*use + 0.000*also + 0.000*new + 0.000*food + 0.000*land
+2014-08-30 13:46:09,470 : INFO : topic #3 (0.083): 0.038*urban + 0.014*cities + 0.011*land + 0.007*growth + 0.007*expansion + 0.007*las + 0.006*housing + 0.006*economic + 0.006*areas + 0.006*population
+2014-08-30 13:46:09,471 : INFO : topic #4 (0.083): 0.010*biodiversity + 0.009*ecosystem + 0.008*marine + 0.008*ocean + 0.007*services + 0.007*ecosystems + 0.006*international + 0.006*management + 0.005*environmental + 0.005*climate
+2014-08-30 13:46:09,473 : INFO : topic #5 (0.083): 0.023*climate + 0.019*energy + 0.014*change + 0.012*emissions + 0.008*carbon + 0.008*countries + 0.007*target + 0.006*decarbonization + 0.005*gas + 0.005*targets
+2014-08-30 13:46:09,474 : INFO : topic #6 (0.083): 0.017*education + 0.013*poverty + 0.011*children + 0.010*learning + 0.008*countries + 0.006*social + 0.006*quality + 0.005*school + 0.005*access + 0.005*early
+2014-08-30 13:46:09,476 : INFO : topic #7 (0.083): 0.040*health + 0.013*income + 0.012*countries + 0.005*low + 0.005*middle + 0.005*services + 0.005*care + 0.005*mortality + 0.004*public + 0.004*world
+2014-08-30 13:46:09,478 : INFO : topic #8 (0.083): 0.011*countries + 0.010*private + 0.010*sector + 0.009*aid + 0.007*international + 0.006*developing + 0.006*country + 0.006*risk + 0.005*financial + 0.005*donors
+2014-08-30 13:46:09,480 : INFO : topic #9 (0.083): 0.000*countries + 0.000*poverty + 0.000*private + 0.000*international + 0.000*sector + 0.000*health + 0.000*climate + 0.000*aid + 0.000*economic + 0.000*country
+2014-08-30 13:46:09,481 : INFO : topic #10 (0.083): 0.020*rights + 0.013*human + 0.010*women + 0.009*international + 0.009*social + 0.007*governance + 0.006*economic + 0.005*gender + 0.005*poverty + 0.005*countries
+2014-08-30 13:46:09,483 : INFO : topic #11 (0.083): 0.000*health + 0.000*countries + 0.000*income + 0.000*climate + 0.000*services + 0.000*world + 0.000*new + 0.000*low + 0.000*www + 0.000*economic
+2014-08-30 13:46:09,483 : INFO : topic diff=0.026037, rho=0.229416
+2014-08-30 13:46:11,884 : INFO : -7.591 per-word bound, 192.8 perplexity estimate based on a held-out corpus of 12 documents with 335261 words
+2014-08-30 13:46:11,885 : INFO : PROGRESS: pass 19, at document #12/12
+2014-08-30 13:46:12,136 : INFO : 1/12 documents converged within 50 iterations
+2014-08-30 13:46:12,157 : INFO : topic #0 (0.083): 0.017*food + 0.011*agriculture + 0.009*agricultural + 0.007*systems + 0.007*countries + 0.005*http + 0.005*www + 0.005*also + 0.005*land + 0.005*new
+2014-08-30 13:46:12,159 : INFO : topic #1 (0.083): 0.012*cid + 0.009*energy + 0.009*land + 0.008*water + 0.006*countries + 0.006*goal + 0.006*consumption + 0.005*food + 0.005*production + 0.005*resources
+2014-08-30 13:46:12,160 : INFO : topic #2 (0.083): 0.000*countries + 0.000*health + 0.000*energy + 0.000*climate + 0.000*change + 0.000*use + 0.000*also + 0.000*new + 0.000*food + 0.000*land
+2014-08-30 13:46:12,162 : INFO : topic #3 (0.083): 0.038*urban + 0.014*cities + 0.011*land + 0.007*growth + 0.007*expansion + 0.007*las + 0.006*housing + 0.006*economic + 0.006*areas + 0.006*population
+2014-08-30 13:46:12,163 : INFO : topic #4 (0.083): 0.010*biodiversity + 0.009*ecosystem + 0.008*marine + 0.008*ocean + 0.007*services + 0.007*ecosystems + 0.006*international + 0.006*management + 0.005*environmental + 0.005*climate
+2014-08-30 13:46:12,165 : INFO : topic #5 (0.083): 0.023*climate + 0.019*energy + 0.014*change + 0.012*emissions + 0.008*carbon + 0.008*countries + 0.007*target + 0.006*decarbonization + 0.005*gas + 0.005*targets
+2014-08-30 13:46:12,166 : INFO : topic #6 (0.083): 0.017*education + 0.013*poverty + 0.011*children + 0.010*learning + 0.008*countries + 0.006*social + 0.006*quality + 0.005*school + 0.005*access + 0.005*early
+2014-08-30 13:46:12,168 : INFO : topic #7 (0.083): 0.040*health + 0.013*income + 0.012*countries + 0.005*low + 0.005*middle + 0.005*services + 0.005*care + 0.005*mortality + 0.004*public + 0.004*world
+2014-08-30 13:46:12,169 : INFO : topic #8 (0.083): 0.011*countries + 0.010*private + 0.010*sector + 0.009*aid + 0.007*international + 0.006*developing + 0.006*country + 0.006*risk + 0.005*financial + 0.005*donors
+2014-08-30 13:46:12,171 : INFO : topic #9 (0.083): 0.000*countries + 0.000*poverty + 0.000*private + 0.000*international + 0.000*sector + 0.000*health + 0.000*climate + 0.000*aid + 0.000*economic + 0.000*country
+2014-08-30 13:46:12,173 : INFO : topic #10 (0.083): 0.020*rights + 0.013*human + 0.010*women + 0.009*international + 0.009*social + 0.007*governance + 0.006*economic + 0.005*gender + 0.005*poverty + 0.005*countries
+2014-08-30 13:46:12,174 : INFO : topic #11 (0.083): 0.000*health + 0.000*countries + 0.000*income + 0.000*climate + 0.000*services + 0.000*world + 0.000*new + 0.000*low + 0.000*www + 0.000*economic
+2014-08-30 13:46:12,175 : INFO : topic diff=0.021351, rho=0.223607
+[Finished in 116.1s]

@@ -4,13 +4,13 @@ Function wrapper for performing tasks in
 the gensim metatopic pipeline
 """
 
-from process_json import PreprocessJson
+from process_json import Preprocessor
 from create_corpus import GensimCorpus
 from create_lda import LdaModel
 
 
 def preprocess(input_fp, output_fp):
-    p = PreprocessJson(input_fp)
+    p = Preprocessor(input_fp)
     p.loadjson()
     p.processjson()
     p.savejson(output_fp)
@@ -54,7 +54,8 @@ def corpusGen(data_fp, dict_fp, corpus_fp):
     g.saveCorpus(corpus_fp)
 
 
-def ldaGen(dict_fp, corpus_fp, streamParameters=None, batchParameters=None):
+def ldaGen(dict_fp, corpus_fp, model_fp,
+           streamParameters=None, batchParameters=None):
     g = GensimCorpus()
     dictionary = g.loadDictionary(dict_fp)
     corpus = g.loadCorpus(corpus_fp)
@@ -70,12 +71,14 @@ def ldaGen(dict_fp, corpus_fp, streamParameters=None, batchParameters=None):
 
     #set params and run model
     lda.setParams(params).runLda()
+    print 'saving model to %s' % model_fp
+    lda.save(model_fp)
 
 
 if __name__ == "__main__":
 
     #preprocess data specifying input and output
-    preprocess('../Taxonomy/data/sdsn.json', 'data/sdsn2.json')
+    preprocess('../Taxonomy/data/sdsn2.json', 'data/sdsn2.json')
     dictionaryGen('data/sdsn2.json', 'data/sdsn2.dict')
     corpusGen('data/sdsn2.json', 'data/sdsn2.dict', 'data/sdsn2.mm')
     params = {'num_topics': 12, 'passes': 20}

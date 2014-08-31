@@ -15,8 +15,11 @@ sdsnStopWords = ['global',
                  'sustainably',
                  ]
 
+customStopwords = ['www', ]
+stopwordList = stopwords.words('english').extend(customStopwords)
 
-class PreprocessJson(object):
+
+class Preprocessor(object):
 
     def __init__(self, filepath):
         self.filepath = filepath
@@ -35,7 +38,7 @@ class PreprocessJson(object):
         return ' '.join(text.split())
 
     def removeStopwords(self, text):
-        text = [w for w in text.split() if not w in stopwords.words('english')]
+        text = [w for w in text.split() if not w in stopwordList]
         return ' '.join(text)
 
     def removeWordlist(self, text, wordList=sdsnStopWords):
@@ -83,7 +86,7 @@ class PreprocessJson(object):
             print '\n'
 
 if __name__ == "__main__":
-    p = PreprocessJson('../Taxonomy/data/sdsn.json')
+    p = Preprocessor('../Taxonomy/data/sdsn.json')
     p.loadjson()
     p.processjson()
     #p.savejson('data/sdsn2.json')

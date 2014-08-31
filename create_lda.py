@@ -39,6 +39,15 @@ class LdaModel(object):
         self.model = models.ldamodel.LdaModel(**self.params)
         return self
 
+    def save(self, fp):
+        print 'saving model to %s' % fp
+        self.model.save(fp)
+
+    def load(self, fp):
+        print 'loading model from %s' % fp
+        self.model.load(fp)
+
+
 if __name__ == "__main__":
     from create_corpus import GensimCorpus
     g = GensimCorpus()
