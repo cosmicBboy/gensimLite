@@ -70,16 +70,22 @@ def ldaGen(dict_fp, corpus_fp, model_fp,
         print 'please specify streaming or batch lda'
 
     #set params and run model
-    lda.setParams(params).runLda()
-    print 'saving model to %s' % model_fp
-    lda.save(model_fp)
+    lda.setParams(params)
+    lda.runLda()
+    lda.save_model(model_fp)
+    return lda
 
 
 if __name__ == "__main__":
 
-    #preprocess data specifying input and output
-    preprocess('../Taxonomy/data/sdsn2.json', 'data/sdsn2.json')
-    dictionaryGen('data/sdsn2.json', 'data/sdsn2.dict')
-    corpusGen('data/sdsn2.json', 'data/sdsn2.dict', 'data/sdsn2.mm')
-    params = {'num_topics': 12, 'passes': 20}
-    ldaGen('data/sdsn2.dict', 'data/sdsn2.mm', streamParameters=params)
+    #### preprocess data specifying input and output
+    #preprocess('../Taxonomy/data/sdsn2.json', 'data/sdsn2.json')
+    #dictionaryGen('data/sdsn2.json', 'data/sdsn2.dict')
+    #corpusGen('data/sdsn2.json', 'data/sdsn2.dict', 'data/sdsn2.mm')
+    params = {'num_topics': 12, 'update_every': 1,
+              'passes': 1, 'chunksize': 10000}
+
+    lda = ldaGen(dict_fp='data/sdsn2.dict',
+                 corpus_fp='data/sdsn2.mm',
+                 model_fp='data/sdsn2.lda_model',
+                 streamParameters=params)

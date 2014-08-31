@@ -39,11 +39,11 @@ class LdaModel(object):
         self.model = models.ldamodel.LdaModel(**self.params)
         return self
 
-    def save(self, fp):
+    def save_model(self, fp):
         print 'saving model to %s' % fp
         self.model.save(fp)
 
-    def load(self, fp):
+    def load_model(self, fp):
         print 'loading model from %s' % fp
         self.model.load(fp)
 

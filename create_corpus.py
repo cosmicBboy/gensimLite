@@ -128,9 +128,11 @@ if __name__ == "__main__":
     datafp = 'data/sdsn.json'
     g = GensimCorpus(datafp)
     g.loadjson().json2tuple()
+    for k, v in g.data:
+        print k
 
     #### tokenize the text data
-    g.tokenizeData()
+    #g.tokenizeData()
 
     #### create dictionary and filter
     #g.createDictionary().filterFrequency(n=1)
@@ -139,7 +141,7 @@ if __name__ == "__main__":
     #g.saveDictionary('data/sdsn.dict')
 
     ##### load dictionary
-    g.loadDictionary('data/sdsn.dict')
+    #g.loadDictionary('data/sdsn.dict')
 
     #### create in-memory corpus
     #texts = [text for tag, text in g.data]
@@ -149,5 +151,5 @@ if __name__ == "__main__":
     #g.saveCorpus('data/sdsn.mm')
 
     #### load corpus
-    g.loadCorpus('data/sdsn.mm')
-    g.corpusLength()
+    #g.loadCorpus('data/sdsn.mm')
+    #g.corpusLength()
