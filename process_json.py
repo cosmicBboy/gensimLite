@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+# import nltk
 from nltk.corpus import stopwords
 import json
 import re
@@ -16,7 +16,8 @@ sdsnStopWords = ['global',
                  ]
 
 customStopwords = ['www', ]
-stopwordList = stopwords.words('english').extend(customStopwords)
+stopwordList = stopwords.words('english')
+stopwordList.extend(customStopwords)
 
 
 class Preprocessor(object):
@@ -89,7 +90,7 @@ if __name__ == "__main__":
     p = Preprocessor('../Taxonomy/data/sdsn.json')
     p.loadjson()
     p.processjson()
-    #p.savejson('data/sdsn2.json')
+    # p.savejson('data/sdsn2.json')
 
     # for key in data.keys()[:1]:
     #     print key

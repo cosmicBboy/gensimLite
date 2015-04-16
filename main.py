@@ -22,14 +22,14 @@ def dictionaryGen(data_fp, dict_fp):
     and saves to dict_fp
     '''
     g = GensimCorpus(data_fp)
-    #loads data object as json and converts to tuple
+    # loads data object as json and converts to tuple
     g.loadjson().json2tuple()
-    #tokenize data
+    # tokenize data
     g.tokenizeData()
-    #create dictionary and filter lower word frequency
+    # create dictionary and filter lower word frequency
     print 'creating dictionary...'
     g.createDictionary().filterFrequency(n=1)
-    #save dictionary
+    # save dictionary
     print 'saving dictionary to %s' % dict_fp
     g.saveDictionary(dict_fp)
 
@@ -39,17 +39,17 @@ def corpusGen(data_fp, dict_fp, corpus_fp):
     generates a gensim corpus using
     gensim dictionary file
     '''
-    #load data
+    # load data
     g = GensimCorpus(data_fp)
     g.loadjson().json2tuple()
-    #tokenize data
+    # tokenize data
     g.tokenizeData()
-    #load dictionary
+    # load dictionary
     g.loadDictionary(dict_fp)
-    #create corpus
+    # create corpus
     print 'creating corpus...'
     g.createCorpus([text for tag, text in g.data])
-    #save corpus
+    # save corpus
     print 'saving corpus to %s' % dict_fp
     g.saveCorpus(corpus_fp)
 
@@ -61,7 +61,7 @@ def ldaGen(dict_fp, corpus_fp, model_fp,
     corpus = g.loadCorpus(corpus_fp)
     lda = LdaModel(corpus, dictionary)
 
-    #get params
+    # get params
     if streamParameters:
         params = lda.streamParams(**streamParameters)
     elif batchParameters:
@@ -69,7 +69,7 @@ def ldaGen(dict_fp, corpus_fp, model_fp,
     else:
         print 'please specify streaming or batch lda'
 
-    #set params and run model
+    # set params and run model
     lda.setParams(params)
     lda.runLda()
     lda.save_model(model_fp)
@@ -78,14 +78,41 @@ def ldaGen(dict_fp, corpus_fp, model_fp,
 
 if __name__ == "__main__":
 
-    #### preprocess data specifying input and output
-    #preprocess('../Taxonomy/data/sdsn2.json', 'data/sdsn2.json')
-    #dictionaryGen('data/sdsn2.json', 'data/sdsn2.dict')
-    #corpusGen('data/sdsn2.json', 'data/sdsn2.dict', 'data/sdsn2.mm')
-    params = {'num_topics': 12, 'update_every': 1,
-              'passes': 1, 'chunksize': 10000}
+    """ 
+    Modelling the SDSN Thematic Groups:
+    """
 
-    lda = ldaGen(dict_fp='data/sdsn2.dict',
-                 corpus_fp='data/sdsn2.mm',
-                 model_fp='data/sdsn2.lda_model',
-                 streamParameters=params)
+    # preprocess data specifying input and output #
+
+    # preprocess('../core-engine/data/sdsn2.json', 'data/sdsn2.json')
+    # dictionaryGen('data/sdsn2.json', 'data/sdsn2.dict')
+    # corpusGen('data/sdsn2.json', 'data/sdsn2.dict', 'data/sdsn2.mm')
+    # params = {'num_topics': 12, 'update_every': 1,
+    #           'passes': 1, 'chunksize': 10000}
+
+    ## increase the number of passes
+    ## update_every > 1
+    ## alpha = auto
+
+    # lda = ldaGen(dict_fp='data/sdsn2.dict',
+    #              corpus_fp='data/sdsn2.mm',
+    #              model_fp='data/sdsn2.lda_model',
+    #              streamParameters=params)
+
+    """ 
+    Modelling the SDG Thematic Groups:
+    """
+
+    # input_fp = '../core-engine/data/sdg.json'
+    # preprocess('../core-engine/data/sdg.json', 'data/sdg.json')
+    # dictionaryGen('data/sdg.json', 'data/sdg.dict')
+    # corpusGen('data/sdg.json', 'data/sdg.dict', 'data/sdg.mm')
+    # params = {'num_topics': 26, 'update_every': 1,
+    #           'passes': 10, 'chunksize': 10000}
+
+    # lda = ldaGen(dict_fp='data/sdg.dict',
+    #              corpus_fp='data/sdg.mm',
+    #              model_fp='data/sdg.lda_model',
+    #              streamParameters=params)
+
+    
