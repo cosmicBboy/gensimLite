@@ -4,9 +4,9 @@ Function wrapper for performing tasks in
 the gensim metatopic pipeline
 """
 
-from process_json import Preprocessor
-from create_corpus import GensimCorpus
-from create_lda import LdaModel
+from preprocess.process_json import Preprocessor
+from model.create_corpus import GensimCorpus
+from model.create_lda import LdaModel
 
 
 def preprocess(input_fp, output_fp):
@@ -103,16 +103,21 @@ if __name__ == "__main__":
     Modelling the SDG Thematic Groups:
     """
 
-    # input_fp = '../core-engine/data/sdg.json'
-    # preprocess('../core-engine/data/sdg.json', 'data/sdg.json')
-    # dictionaryGen('data/sdg.json', 'data/sdg.dict')
-    # corpusGen('data/sdg.json', 'data/sdg.dict', 'data/sdg.mm')
-    # params = {'num_topics': 26, 'update_every': 1,
-    #           'passes': 10, 'chunksize': 10000}
+    raw_data_fp = '../../core-engine/data/sdg_v2.json'
+    clean_data_fp = '../data/sdg_v2.json'
+    dict_fp = '../data/sdg_v2.dict'
+    corpus_fp = '../data/sdg_v2.mm'
+    model_fp = '../data/sdg_v2.lda_model'
 
-    # lda = ldaGen(dict_fp='data/sdg.dict',
-    #              corpus_fp='data/sdg.mm',
-    #              model_fp='data/sdg.lda_model',
-    #              streamParameters=params)
+    preprocess(raw_data_fp, clean_data_fp)
+    dictionaryGen(clean_data_fp, dict_fp)
+    corpusGen(clean_data_fp, dict_fp, corpus_fp)
+    params = {'num_topics': 8, 'update_every': 1,
+              'passes': 50, 'chunksize': 10000}
+
+    lda = ldaGen(dict_fp=dict_fp,
+                 corpus_fp=corpus_fp,
+                 model_fp=model_fp,
+                 streamParameters=params)
 
     
