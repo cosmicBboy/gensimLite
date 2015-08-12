@@ -51,8 +51,8 @@ class LdaModel(object):
 if __name__ == "__main__":
     from create_corpus import GensimCorpus
     g = GensimCorpus()
-    dictionary = g.loadDictionary('data/sdsn.dict')
-    corpus = g.loadCorpus('data/sdsn.mm')
+    dictionary = g.loadDictionary('../../data/sdg_v2.dict')
+    corpus = g.loadCorpus('../../data/sdg_v2.mm')
     lda = LdaModel(corpus, dictionary)
 
     #get default stream params

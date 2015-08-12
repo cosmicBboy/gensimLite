@@ -87,10 +87,10 @@ class Preprocessor(object):
             print '\n'
 
 if __name__ == "__main__":
-    p = Preprocessor('../Taxonomy/data/sdsn.json')
+    p = Preprocessor('../../../core-engine/data/undaf_v2.json')
     p.loadjson()
     p.processjson()
-    # p.savejson('data/sdsn2.json')
+    p.savejson('../../data/undaf_v2.json')
 
     # for key in data.keys()[:1]:
     #     print key
